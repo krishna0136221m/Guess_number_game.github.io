@@ -59,9 +59,8 @@ instruction_btn2.addEventListener("click",()=>{
 var num1=(Math.random())*100;
 var num=Math.round(num1);
 
-var count = 5;
+var count = 10;
 
-console.log(num);
 // logic for single player
 let button1 = document.getElementById('btn1');
 button1.addEventListener("click",()=>{
@@ -113,7 +112,7 @@ try1.addEventListener("click",()=>{
     document.getElementById('sinput1').value="";
     document.getElementById('error1').classList.remove("color");
      document.getElementById('schance').innerHTML="";
-    count=6;
+    count=10;
     flag=0;
 })
 
@@ -144,7 +143,6 @@ let button2=document.getElementById('btn2');
 button2.addEventListener('click',()=>{
     let ans=document.getElementById('dinput1').value;
     let ans1=parseInt(ans);
-    console.log(count2);
     if(num>ans1)
     {
         count2--;
@@ -201,7 +199,6 @@ let button3=document.getElementById('btn3');
 button3.addEventListener('click',()=>{
     let ans2=document.getElementById('dinput2').value;
     let ans3=parseInt(ans2);
-    console.log(count3);
     if(num>ans3)
     {
         count3--;
