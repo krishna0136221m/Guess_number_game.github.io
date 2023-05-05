@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+}
+html,body{
+    margin: 0px; height: 100%; width: 100%;
+    background-color: black;
+}
+.parent-container{
+    height: 100%; width: 100%;
+}
+
+.main-container1{
+    height: 100%; width: 100%;
+    background-image: url(background/back.jpg);
+    background-repeat: no-repeat; background-size: cover;
+    display: flex; justify-content: center; align-items: center;
+}
+.main-container1-copy{
+    display: none;
+}
+.container1{
+    height: 100px;  width: 330px; 
+}
+input{
+    color: white; font-size: 20px; text-align: center;
+    background: transparent;
+    height: 50%; width: 100%;
+    border-radius:10px;
+}
+input[type="text"]::placeholder {
+    color: aliceblue;
+    font-size: 20px; font-weight: bold; text-align: center;
+}
+.error{
+    text-align: center; padding-bottom: 10px;
+    color: red;
+    font-size: 20px; font-weight: bold;
+}
+button{
+    font-size: 20px; font-weight: bold;
+    background-color:white;
+    height: 50%;
+    width: 103%;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: blue;
+}
+.main-container2-copy{
+    display: none;
+}
+.main-container2{
+    display: block;
+    height: 100%; width: 100%;
+    background-image: url(background/back\ \(2\)-copy.png);
+    background-repeat: no-repeat; background-size: cover;
+    display: flex; justify-content: center; align-items: center;
+    overflow: hidden;
+}
+.greet{
+    color: transparent;
+    font-size: 80px; font-weight: bold;
+    text-transform: capitalize;
+}
+.greet2{
+    color: white;
+    font-size: 80px; font-weight: bold;
+    text-transform: capitalize;
+    animation-name: greet;
+    animation-duration: 2s;
+}
+@keyframes greet {
+    0%{
+        transform: translateX(1000px);
+    }
+}
+.greeting{
+    display: none;
+}
+.container2{
+    height: 40%;  width: 30%;
+    padding-top:7%;
+}
+.container2-copy{
+    display: none;
+}
+.single{
+    color: white;
+    height: 30%; width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.doubble{
+    color: white;
+    height: 30%;  width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+} 
+
+.instruction1{
+    height: 100%;
+    width: 100%;
+    background-image: url(background/instruction-page.jpg);
+    background-size: 100%;
+    display: flex; justify-content: center; align-items: center;
+}
+.instruction1-copy{
+    display: none;
+}
+.instruction{
+    height:65%; width: 50%;
+    margin-top: -10%;
+    color: white; padding:0% 0% 0% 3%;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    border-radius: 30px;
+    margin-left: 7%;
+}
+.instruction2-copy{
+    display: none;
+}
+.instruction2{
+    height: 100%;
+    width: 100%;
+    background-image: url(background/instruction-page.jpg);
+    background-size: 100%;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.main-container3{
+    height: 100%; width: 100%;
+    display: flex; justify-content: center; align-items: center;
+    background-image: url(background/game.jpg); background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-container3-copy{
+    display: none;
+}
+.player1{ 
+    align-items: center;
+    height: 100%; width: 100%;
+    border-radius:20px;
+}
+.para1{
+    font-weight: bold;
+    position: relative;
+    top: 12%;
+    color:honeydew;
+    text-align: center;
+    font-size: 35px;
+}
+#error1{
+    color: red;
+    position: relative; top: 14%;
+    text-align: center; font-size: 25px;
+}
+.retry{
+    width: 8%;
+    position: absolute;
+    top: 3%;
+    left: 46%;
+}
+#retry{
+    color: black;
+    border: 1px solid red;
+}
+.answer1{
+    position: fixed;
+    top: 50%; left: 40%;
+    width: 20%; height: 15%;
+}
+.btn4{
+    position: fixed;
+    top: 67%; left:47%;
+    height: 7%; width: 8%;
+    background-color: mediumpurple;
+}
+.btn4:hover{
+    background-color:blue;
+}
+
+.main-container4{
+    height: 100%; width: 100%;
+    display: flex; justify-content: center; align-items: center;
+    background-image: url(background/game.jpg); background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-container4-copy{
+    display: none;
+}
+.player2{
+    align-items: center;
+    height: 100%; width: 100%;
+    border-radius:20px;
+}
+.para2{
+    font-weight: bold;
+    position: relative; top: 12%;
+    color:honeydew;
+    text-align: center; font-size: 35px;
+}
+#error2{
+    color: red;
+    position: relative;  top: 14%;
+    text-align: center; font-size: 25px;
+}
+#error3{
+    color: red;
+    position: relative;
+    top: 14%; text-align: center; font-size: 25px;
+}
+.answer2{
+    position: fixed; 
+    top: 50%; left: 40.5%;
+    width: 20%; height: 15%;
+    display: flex; column-gap: 10%;
+}
+
+.btn3{
+    position: fixed;
+    left:47%; top: 63%;
+    height: 7%; width: 8%; 
+    background-color: mediumpurple;
+}
+.btn5{
+    position: fixed;
+    left:47%; top: 73%;
+    height: 7%; width: 8%; 
+    background-color: mediumpurple
+}
+.btn3:hover{
+    background-color:blue;
+}
+.color{
+    color: green !important; 
+}
+.chance1{
+    color: white;
+    font-size: 25px;
+}
+.p1chance{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left:0%; top: 0%;
+}
+.p2chance{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 0%; top: 0%;
+}

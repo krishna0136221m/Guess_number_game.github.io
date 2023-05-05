@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="background/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>GuessNumber-Game</title>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="main-container1">
+           <div class="container1">
+               <h3 class="error"></h3>
+               <input type="text" placeholder="Enter Your Name">
+               <br>
+               <br>
+               <button>Enter</button>
+           </div>
+        </div> 
+        <div class="main-container2-copy" id="page2"> <!--here i have to make change in class replace by main-conatine2-copy-->
+            <div class="greet"></div>
+            <div class="container2-copy">
+            <button class="single">Single player</button>
+            <br>
+            <br>
+            <button class="doubble">Two player</button>
+            </div>
+        </div>
+<!--here is written about instruction-->        
+        <div class="instruction1-copy" id="instruct1">
+            <div class="instruction">
+                <h1 style="text-align: center;">Instruction</h1><br><br>
+                >> In this game you have to Guess a secret number. <br><br>
+                >> In every new game secret number changes. <br><br>
+                >> Guess the number within 6 chances. <br><br>
+                >> If you exceded more than 6 chances then you lose the game. <br> <br>
+                >> Don't refresh page while you are playing. <br> <br>
+                >> Whenever you submits wrong answer then a message display on screen which will be hint to guess secret number. <br><br>
+                >> Whenever a you wons the game then refresh tab for changing secret number
+            </div>
+            <div>
+            <button id="play1">Let's play</button>
+            </div>
+        </div>
+        <div class="instruction2-copy" id="instruct2">
+            <div class="instruction">
+                <h1 style="text-align: center;">Instruction</h1><br><br>
+                >> In this game you have to Guess a secret number. <br><br>
+                >> In every new game secret number changes. <br> <br>
+                >> Each player has 5 chances to Guess number. <br> <br>
+                >> Player Whose answer is correct will be the winner. <br><br>
+                >> Don't refresh page while you are playing. <br> <br>
+                >> Whenever a player submits wrong answer then a message display on screen which will be hint to guess secret number. <br> <br>
+                >> Whenever a player wons the game then refresh tab for changing secret number
+            </div>
+            <div>
+            <button id="play2">Let's play</button>
+            </div>
+        </div>
+<!--here is end of instruction-->        
+        <div class="main-container3-copy" id="page3">
+            <div class="player1">
+                <span class="chance1" id="schance"></span>
+                <br>
+                <div class="para1">Guess number between 1 to 99</div><br>
+                <div id="error1"></div>
+                <div class="retry"><button id="retry1">Back</button></div>
+                <div class="answer1 pos">
+                    <input type="text" placeholder="Answer" id="sinput1">
+                </div>
+                <button class="btn4" id="btn1">Submit</button>
+            </div>
+        </div>
+        <div class="main-container4-copy" id="page4">
+            <div class="player2"><br>
+                <span class="p1chance" id="p1chance1"></span><br>
+                <span class="p2chance" id="p2chance2"></span>
+                <div class="para2">Guess number between 1 to 99</div><br>
+                <div id="error2"></div><br>
+                <div id="error3"></div>
+                <div class="retry"><button id="retry2">Back</button></div>
+                <div class="answer2 posn">
+                    <input type="text" placeholder="Answer1" id="dinput1">
+                    <input type="text" placeholder="Answer2" id="dinput2">
+                </div>
+                <button class="btn3" id="btn2">Submit1</button>
+                <br><br><br>
+                <button class="btn5" id="btn3">Submit2</button>
+            </div>
+        </div>
+    </div>      
+    <script src="game.js"></script>
+</body>
+</html>
